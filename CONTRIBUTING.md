@@ -1,4 +1,4 @@
-Thank you for your interest in contributing to Glosario!
+Thank you for your interest in contributing to Glosario! 
 We welcome contributions of all kinds.
 If you are here to submit a definition,
 either for a new term
