@@ -1,0 +1,4 @@
+# filepath: /home/coder/glosario/netlify.toml
+[build]
+  command = "pip install yamllint && make site"
+  publish = "_site"
