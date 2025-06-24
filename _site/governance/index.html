@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="governance">
+  <head>
+    <title>Glossary</title>
+    <link href="/static/site.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/glossary.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Matomo -->
+    <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://matomo.carpentries.org/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '12']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+
+
+    <script type="text/javascript" src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+<div class="row" dir="auto">
+  <div class="left-ltr">
+    <a href="/"><img class="logo" src="/static/parrot.svg" alt="Parrot logo"/></a>
+  </div>
+  <div class="right-ltr">
+    <font class="title_font">
+      <h1>Governance</h1>
+      <div class="describe">
+        <h2>A multilingual glossary for computing and data science terms.</h2>
+      </div>
+    </font>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary glos-main-nav">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contribute
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeWrUOM3SWFVtErDzWQugKmVY4gmpqNLpnB7QJioVBCLnEa7g/viewform">Via Google Form</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://github.com/carpentries/glosario/issues">Via GitHub Issues</a></li>
+              <li>
+                <a class="dropdown-item" target="_blank" href="mailto:community@carpentries.org?subject=Contribution%20to%20Glosario.%20Term%3A%20%5BWrite%20term%20in%20English%20here%5D.%20Language%3A%20%5BWrite%20language%20you%20are%20translating%20into%20here%5D&amp;body=What%20is%20the%20English%20name%20of%20the%20term%20you%20are%20translating%3F%0A%5BWrite%20term%20in%20English%20here%5D%0A%0AWhat%20language%20are%20you%20translating%20into%3F%0A%5BWrite%20language%20you%20are%20translating%20into%20here%5D%0A%0AWhat%20is%20the%20term%20in%20the%20language%20you%20are%20translating%20into%3F%0A%5BFill%20this%5D%0A%0AAdd%20your%20translation%20here%3A%0A%5BFill%20this%5D">
+                  Via email
+                </a>
+              </li>
+              <hr>
+              <li><a class="dropdown-item" target="_blank" href="https://github.com/carpentries/glosario">View Project on GitHub</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Guides
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" target="_blank" href="https://docs.google.com/document/d/18oxYd6D9heESqw2gw9cbtxiCfkb4wlxazERFBIDCoeM/edit?tab=t.0#heading=h.wsi1psxc3n64">GitHub How-To</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=ew1eb1ug-Q8">YouTube Guide (English)</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=f9K5wYq0dQM&t=23s">YouTube Guide (Español)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://github.com/carpentries/glosario?tab=readme-ov-file#contributors">Contributors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="/help">Help</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+    <div id="content-wrapper">
+    <div class="inner clearfix">
+    <section id="main-content-home">
+      <h1 id="governance">Governance</h1>
+
+<p>This project uses <a href="https://journals.sagepub.com/doi/10.1177/088610998600100206">Martha’s Rules</a> for making decisions.  The
+first section below describes these rules; the second lists voting members of
+the project and explains how to become one, while the third lists decisions made
+to date.</p>
+
+<h2 id="making-decisions">Making Decisions</h2>
+
+<ol>
+  <li>Before each meeting, anyone who wishes may sponsor a proposal by filing an
+issue in the GitHub repository tagged “proposal”.  Proposals must be filed
+at least 24 hours before a meeting in order to be considered at that
+meeting, and must include:
+    <ul>
+      <li>a one-line summary (the subject line of the issue)</li>
+      <li>the full text of the proposal</li>
+      <li>any required background information</li>
+      <li>pros and cons</li>
+      <li>possible alternatives</li>
+    </ul>
+  </li>
+  <li>
+    <p>A quorum is established in a meeting if half or more of voting members are
+present.</p>
+  </li>
+  <li>
+    <p>Once a person has sponsored a proposal, they are responsible for it.  The
+group may not discuss or vote on the issue unless the sponsor or their
+delegate is present.  The sponsor is also responsible for presenting the
+item to the group.</p>
+  </li>
+  <li>After the sponsor presents the proposal, a sense vote is cast for the
+proposal prior to any discussion:
+    <ul>
+      <li>Who likes the proposal?</li>
+      <li>Who can live with the proposal?</li>
+      <li>Who is uncomfortable with the proposal?</li>
+    </ul>
+  </li>
+  <li>
+    <p>If all of the group likes or can live with the proposal, it is immediately
+accepted with no further discussion.</p>
+  </li>
+  <li>
+    <p>If most of the group is uncomfortable with the proposal, it is postponed for
+further rework by the sponsor.</p>
+  </li>
+  <li>If any members are uncomfortable:
+    <ol>
+      <li>They can briefly state their objections and tell the facilitator how
+much time they reasonably require to make comments.</li>
+      <li>The facilitator then sets a time limit for discussion at 10 minutes
+plus whatever upward adjustment needed to meet any special needs
+participants may have.</li>
+      <li>After the allotted time or when no one has anything further to add
+(whichever comes first), the facilitator calls for a yes-or-no vote on
+the question: “Should we implement this decision over the stated
+objections?”</li>
+      <li>If a majority votes “yes” the proposal is implemented.  Otherwise, the
+proposal is returned to the sponsor for further work.</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="suffrage">Suffrage</h2>
+
+<ol>
+  <li>The following people are currently voting members of this project:
+    <ul>
+      <li><a href="https://ianfs.dev/">Ian Flores Siaca</a></li>
+      <li><a href="https://zkamvar.netlify.app/">Zhian Kamvar</a></li>
+      <li><a href="https://francoismichonneau.net/">François Michonneau</a></li>
+      <li><a href="http://third-bit.com/">Greg Wilson</a></li>
+    </ul>
+  </li>
+  <li>To become a voting member:
+    <ol>
+      <li>A current member must sponsor a proposal to add the candidate.</li>
+      <li>That proposal must pass as outlined in the “Making Decisions” section of
+this page.</li>
+    </ol>
+  </li>
+  <li>Voting members may resign from the project at any time, or lose their vote
+if a proposal to that effect is passed as outlined in the “Making Decisions”
+section of this page.
+    <ol>
+      <li>A proposal to remove someone’s vote may not contain any other business.</li>
+      <li>Each person must be the subject of a separate proposal.</li>
+      <li>The person in question has the right to vote on the proposal to remove
+their vote.</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="recording-decisions">Recording Decisions</h2>
+
+<p>Proposals that have been accepted are listed below in reverse chronological
+order. Each entry must contain:</p>
+
+<ul>
+  <li>the date the proposal was accepted,</li>
+  <li>the proposal’s one-line summary, and</li>
+  <li>a link to the proposal issue in GitHub.</li>
+</ul>
+
+    </section>
+        <div class="sticky-home">
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/af">Afrikaans
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/am">አማርኛ
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/ar">اَلْعَرَبِيَّةُ
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/bn">Bangla
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/de">Deutsch
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/el">Ελληνικά
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/en">English
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/es">Español
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/fr">Français
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/he">עִברִית
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/hr">Hrvatski
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/hu">Magyar
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/id">Bahasa Indonesia
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/it">Italiano
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/ja">日本語
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/ko">한국어
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/la">Latin
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/pt">Português
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/nl">Nederlands
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/st">Southern Sotho
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/sw">Kiswahili
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/tn">Setswana
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/uk">Українська
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/xh">isiXhosa
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/zh">中文
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/zu">IsiZulu
+                    </a>
+                    <br>
+                </font>
+            
+        </div>
+    </div>
+    </div>
+    </main>
+    <footer>
+      <p>
+        <a href="/">Home</a>
+        -
+        <a href="/license/">License</a>
+        -
+        <a href="/conduct/">Code of Conduct</a>
+        -
+        <a href="https://github.com/carpentries/glosario">GitHub</a>
+        -
+        <a href="https://www.netlify.com">This site is powered by Netlify</a>
+      </p>
+    </footer>
+  </body>
+</html>

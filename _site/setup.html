@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>Glossary</title>
+    <link href="/static/site.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/glossary.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Matomo -->
+    <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setDoNotTrack", true]);
+    _paq.push(["disableCookies"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://matomo.carpentries.org/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '12']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+
+
+    <script type="text/javascript" src="/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+<div class="row" dir="auto">
+  <div class="left-ltr">
+    <a href="/"><img class="logo" src="/static/parrot.svg" alt="Parrot logo"/></a>
+  </div>
+  <div class="right-ltr">
+    <font class="title_font">
+      <h1>Setup</h1>
+      <div class="describe">
+        <h2>A multilingual glossary for computing and data science terms.</h2>
+      </div>
+    </font>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary glos-main-nav">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contribute
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeWrUOM3SWFVtErDzWQugKmVY4gmpqNLpnB7QJioVBCLnEa7g/viewform">Via Google Form</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://github.com/carpentries/glosario/issues">Via GitHub Issues</a></li>
+              <li>
+                <a class="dropdown-item" target="_blank" href="mailto:community@carpentries.org?subject=Contribution%20to%20Glosario.%20Term%3A%20%5BWrite%20term%20in%20English%20here%5D.%20Language%3A%20%5BWrite%20language%20you%20are%20translating%20into%20here%5D&amp;body=What%20is%20the%20English%20name%20of%20the%20term%20you%20are%20translating%3F%0A%5BWrite%20term%20in%20English%20here%5D%0A%0AWhat%20language%20are%20you%20translating%20into%3F%0A%5BWrite%20language%20you%20are%20translating%20into%20here%5D%0A%0AWhat%20is%20the%20term%20in%20the%20language%20you%20are%20translating%20into%3F%0A%5BFill%20this%5D%0A%0AAdd%20your%20translation%20here%3A%0A%5BFill%20this%5D">
+                  Via email
+                </a>
+              </li>
+              <hr>
+              <li><a class="dropdown-item" target="_blank" href="https://github.com/carpentries/glosario">View Project on GitHub</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Guides
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" target="_blank" href="https://docs.google.com/document/d/18oxYd6D9heESqw2gw9cbtxiCfkb4wlxazERFBIDCoeM/edit?tab=t.0#heading=h.wsi1psxc3n64">GitHub How-To</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=ew1eb1ug-Q8">YouTube Guide (English)</a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=f9K5wYq0dQM&t=23s">YouTube Guide (Español)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://github.com/carpentries/glosario?tab=readme-ov-file#contributors">Contributors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="/help">Help</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+    <div id="content-wrapper">
+    <div class="inner clearfix">
+    <section id="main-content-home">
+      <h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li>A GitHub account</li>
+  <li>A working <a href="https://www.python.org">Python 3.4+</a> environment to run the lesson initialization
+script</li>
+  <li>(Optional) A local install of <a href="https://bundler.io/">bundler</a> which will require the Ruby
+language to be installed.</li>
+</ul>
+
+<h2 id="setup-for-local-rendering-of-the-lessons-optional">Setup for local rendering of the lessons (optional)</h2>
+
+<p>Though not essential, it is desirable to be able to preview changes on your own machine
+before pushing them to GitHub.</p>
+
+<p>In order to preview changes locally, you must install the software described below.</p>
+
+<p>If you don’t install bundler as indicated in this section, you will not be able to preview the
+lessons locally (in other words, you won’t be able to run <code class="language-plaintext highlighter-rouge">make serve</code> or <code class="language-plaintext highlighter-rouge">make site</code>).
+However, you can still edit the files that make up the lessons. You will only be able to see the
+changes once your edits have been merged in the main repository.</p>
+
+<h3 id="windows">Windows</h3>
+
+<p>For Windows, there are two main ways to setup your system to be able to render the lessons.</p>
+
+<ul>
+  <li>Option 1 relies on the Windows Subsystem for Linux (WSL). WSL allows you to run a Linux
+environment directly from Windows.</li>
+  <li>Option 2 relies on using Windows built-in applications.</li>
+</ul>
+
+<h2 id="option-1---using-the-windows-subsystem-for-linux-wsl">Option 1 - Using the Windows Subsystem for Linux (WSL)</h2>
+
+<p>If your version of Windows supports it, using the WSL will make the installation of the tools
+needed easier. Instructions to install Linux distributions from Windows 10/Windows Server are
+available from the <a href="https://docs.microsoft.com/en-us/windows/wsl/about">Microsoft website</a>.</p>
+
+<p>Once you have installed a Linux distribution, you can follow the installation instructions for
+<a href="#linux-ubuntu">Linux</a> listed below. If you install a distribution other than Ubuntu, you will
+need to adjust the commands that install the packages.</p>
+
+<h2 id="option-2---using-windows-built-in-applications">Option 2 - Using Windows built-in applications</h2>
+
+<p>With the instructions below, you’ll be able to preview websites for non-R based lessons. You’ll be
+able to do so from the Git Bash terminal or from the “Command Prompt with Ruby” that comes with
+the Ruby installation. You won’t be able to use the <code class="language-plaintext highlighter-rouge">make</code> commands as Make isn’t available from
+the Git Bash terminal (see the optional section below for more info).</p>
+
+<ol>
+  <li>
+    <p><strong>Ruby</strong>, go to <a href="https://rubyinstaller.org/">https://rubyinstaller.org/</a> choose Ruby+DevKit for your
+  system (typically x64), and the most recent version available. During the
+  installation process, choose to install the MSYS2 toolchain. On the last step
+  of the installation screen, make sure that “Run ‘ridk install’” is checked.
+  This will bring a terminal window with 3 options, press “Enter” (for the
+  default installation). After this step completes, you’ll be prompted again,
+  and press “Enter” again (for the default option). Once the installation is
+  complete, restart your system.</p>
+  </li>
+  <li>
+    <p>Navigate to the folder that contains the lesson, and you can now use <code class="language-plaintext highlighter-rouge">bundle
+  exec jekyll serve</code> from your Git Bash terminal to preview the lessons.</p>
+  </li>
+</ol>
+
+<h3 id="optional-but-recommended">Optional (but recommended)</h3>
+
+<p>With these instructions, you’ll be able to use the <code class="language-plaintext highlighter-rouge">make</code> commands and render all lessons
+including those that use R. However, you won’t be able to do so from the Git Bash terminal, but
+from the other terminals (Windows Powershell, cmd.exe, or the Command Prompt with Ruby).</p>
+
+<ol>
+  <li>
+    <p>In the File Explorer, right-click on “This PC” icon, and click on
+  “Properties”. Click on “Advanced System Settings”, and click on the button
+  “Environment Variables”. Click on the variable “Path”, and then the “Edit”
+  button. Click on the “New” button and add <code class="language-plaintext highlighter-rouge">C:\Ruby26-x64\msys64\usr\bin</code> (use
+  the File Explorer to make sure this is the correct path for your Ruby and
+  MSYS2 installation). If you’re working on R-based lessons and R isn’t already
+  listed there, you need to add it by adding <code class="language-plaintext highlighter-rouge">C:\Program Files\R\R-3.x.x\bin</code>
+  (using the correct path and R version number for your installation).</p>
+  </li>
+  <li>
+    <p>Open the “Command Prompt with Ruby” (if it was open before you edited the
+  Path, close it and re-open it).</p>
+  </li>
+</ol>
+
+<p>Regardless of the option you chose, go to the section <a href="#for-everyone">For Everyone</a>.</p>
+
+<h3 id="macos">macOS</h3>
+
+<ol>
+  <li>First make sure you have Homebrew installed</li>
+</ol>
+
+<p>To install Homebrew, open the <a href="https://brew.sh/">Homebrew website</a> and copy/paste the first command
+on that page into your Terminal. You may also want to check the requirements first. The command for
+installing Homebrew will look something like:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  /bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p>If you’re not sure whether you have brew installed, type</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  brew <span class="nb">help</span>
+</code></pre></div></div>
+
+<p>If you have Homebrew installed, you should see something like:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c"># Example usage:</span>
+  brew search <span class="o">[</span>TEXT|/REGEX/]
+  brew info <span class="o">[</span>FORMULA...]
+  brew <span class="nb">install </span>FORMULA...
+  brew update
+  brew upgrade <span class="o">[</span>FORMULA...]
+  brew uninstall FORMULA...
+  brew list <span class="o">[</span>FORMULA...]
+
+<span class="c"># Troubleshooting:</span>
+  brew config
+  brew doctor
+  brew <span class="nb">install</span> <span class="nt">--verbose</span> <span class="nt">--debug</span> FORMULA
+
+<span class="c"># Contributing:</span>
+  brew create <span class="o">[</span>URL <span class="o">[</span><span class="nt">--no-fetch</span><span class="o">]]</span>
+  brew edit <span class="o">[</span>FORMULA...]
+
+<span class="c"># Further help:</span>
+  brew commands
+  brew <span class="nb">help</span> <span class="o">[</span>COMMAND]
+  man brew
+  https://docs.brew.sh
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p><strong>Ruby</strong> – <code class="language-plaintext highlighter-rouge">brew install ruby</code></p>
+  </li>
+  <li>
+    <p><strong>bundler</strong> – <code class="language-plaintext highlighter-rouge">gem install bundler --user-install</code></p>
+  </li>
+  <li>
+    <p>Go to the section <a href="#for-everyone">For Everyone</a></p>
+  </li>
+</ol>
+
+<h3 id="linux-ubuntu">Linux (Ubuntu)</h3>
+
+<ol>
+  <li>
+    <p><strong><a href="https://www.ruby-lang.org/en/downloads/">Ruby</a></strong> and other dependencies.</p>
+
+    <p>You will need to have the following packages installed (some might already
+be on your system):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>ruby ruby-dev build-essential libxml2-dev
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><a href="https://bundler.io/">bundler</a></strong></p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> gem <span class="nb">install </span>bundler <span class="nt">--user-install</span>
+</code></pre></div>    </div>
+
+    <p><code class="language-plaintext highlighter-rouge">gem</code> is the package management framework for Ruby. It was installed as part
+ of Ruby in the step above. <code class="language-plaintext highlighter-rouge">bundler</code> is also a package manager but at the
+ scale of a project instead of being system-wide. It makes it easier to
+ manage dependencies.</p>
+  </li>
+</ol>
+
+<h3 id="for-everyone">For Everyone</h3>
+
+<ol>
+  <li>
+    <p><strong>The GitHub Pages Ruby Gem</strong></p>
+
+    <p>Make sure there is a <code class="language-plaintext highlighter-rouge">Gemfile</code> at the root of your lesson repository. This
+ file should only contain:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">source</span> <span class="s1">'https://rubygems.org'</span>
+ gem <span class="s1">'github-pages'</span>, group: :jekyll_plugins
+</code></pre></div>    </div>
+
+    <p>If you don’t have it, create it and the two lines above to it.</p>
+
+    <p>At the root of your repository type</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> bundle update
+</code></pre></div>    </div>
+
+    <p>If you haven’t used <code class="language-plaintext highlighter-rouge">bundler</code> yet for your project, this command will
+ install all the needed dependencies. Otherwise, it will update them to match
+ the current versions used by GitHub Pages.</p>
+  </li>
+  <li>
+    <p><strong>Generate the lesson</strong></p>
+
+    <p>Now you are ready to run jekyll to build your website and run a local server. To do this run:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> make serve
+</code></pre></div>    </div>
+
+    <p>There will be several lines of output after this. If there were errors or warnings you can use
+ them to fix your lesson and run again if it failed. If it was successful the last few lines
+ will include <code class="language-plaintext highlighter-rouge">Server address: http://127.0.0.1:4000</code> and <code class="language-plaintext highlighter-rouge">Server running... press ctrl-c to
+ stop</code>. You can see your rendered site by pointing your browser to the address shown.</p>
+  </li>
+</ol>
+
+<h3 id="for-r-based-lessons">For R-based lessons</h3>
+
+<p>You will need a recent version of R (&gt;= 3.5.0). Installation instructions are available from the
+<a href="https://cran.r-project.org">CRAN website</a>.</p>
+
+<p>We use the [knitr][cran-knitr], and <a href="https://cran.r-project.org/package=remotes">remotes</a> to format
+lessons written in R Markdown and figure out needed packages to execute the code in the lesson. You
+will need to install the <code class="language-plaintext highlighter-rouge">remotes</code> package to build R lessons (and this example lesson), the other
+packages will be installed automatically during the rendering of the lesson. You can install this
+package by opening an R terminal and typing:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">install.packages</span><span class="p">(</span><span class="s1">'remotes'</span><span class="p">,</span><span class="w"> </span><span class="n">repos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'https://cran.rstudio.com'</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="troubleshooting">Troubleshooting</h3>
+
+<ol>
+  <li>
+    <p>Check your version of Ruby:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby <span class="nt">-v</span>
+</code></pre></div>    </div>
+
+    <p>You need Ruby 2.1.0 or later (currently GitHub pages uses Ruby 2.7.1). If you
+have an older version of Ruby, if possible upgrade your operating system to a
+more recent version. If it’s not possible, consider using
+<a href="https://github.com/rbenv/rbenv">rbenv</a>.</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> rbenv <span class="nb">install </span>2.7.1
+</code></pre></div>    </div>
+
+    <p>And then instructing <code class="language-plaintext highlighter-rouge">rbenv</code> to use it in your lesson development process by
+ executing the following command from your lesson directory:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> rbenv <span class="nb">local </span>2.7.1
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong><a href="https://rubygems.org/pages/download/">RubyGems</a></strong>
+is a tool which manages Ruby packages. It should have been installed along with Ruby and you can
+test your installation by running</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nt">--version</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>If you want to run <code class="language-plaintext highlighter-rouge">bin/lesson_check.py</code> (which is invoked by <code class="language-plaintext highlighter-rouge">make lesson-check</code>)
+you will need the <a href="https://pypi.org/project/PyYAML/">PyYAML</a> module for Python 3.</p>
+  </li>
+</ol>
+
+    </section>
+        <div class="sticky-home">
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/af">Afrikaans
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/am">አማርኛ
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/ar">اَلْعَرَبِيَّةُ
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/bn">Bangla
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/de">Deutsch
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/el">Ελληνικά
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/en">English
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/es">Español
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/fr">Français
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/he">עִברִית
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/hr">Hrvatski
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/hu">Magyar
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/id">Bahasa Indonesia
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/it">Italiano
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/ja">日本語
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/ko">한국어
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/la">Latin
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/pt">Português
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/nl">Nederlands
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/st">Southern Sotho
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/sw">Kiswahili
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/tn">Setswana
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/uk">Українська
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/xh">isiXhosa
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/zh">中文
+                    </a>
+                    <br>
+                </font>
+            
+                <font color="white" size="5px" face="arial">
+                    <a class="lang_links"
+                       href="/zu">IsiZulu
+                    </a>
+                    <br>
+                </font>
+            
+        </div>
+    </div>
+    </div>
+    </main>
+    <footer>
+      <p>
+        <a href="/">Home</a>
+        -
+        <a href="/license/">License</a>
+        -
+        <a href="/conduct/">Code of Conduct</a>
+        -
+        <a href="https://github.com/carpentries/glosario">GitHub</a>
+        -
+        <a href="https://www.netlify.com">This site is powered by Netlify</a>
+      </p>
+    </footer>
+  </body>
+</html>
